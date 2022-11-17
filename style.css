@@ -15,8 +15,6 @@ body {
 }
 .wrapper {
   width: 70vw;
-  background-color: brown;
-  /* margin: 0 25rem 0 25rem; */
 }
 .first_div {
   background-image: url(images/desktop/image-header.jpg);
@@ -53,7 +51,7 @@ body {
   color: hsl(210, 4%, 67%);
   font-size: 1.5rem;
 }
-.menu ul li .li_a {
+.menu ul li .li_menu {
   text-transform: uppercase;
   background-color: hsl(51, 100%, 49%);
   font-size: 1.2rem;
@@ -84,7 +82,8 @@ body {
   font-size: 1.3rem;
 }
 
-.nav_li ul li .li_a {
+.nav_li ul .li_a a {
+  font-family: "Fraunces", serif;
   text-transform: uppercase;
   background-color: #fff;
   color: #000;
@@ -93,8 +92,7 @@ body {
   padding: 1rem 2rem;
   border-radius: 4rem;
 }
-.nav_li ul li .li_a:hover,
-.nav_li ul li .li_a:visited {
+.nav_li ul .li_a a:hover {
   background-color: rgba(255, 255, 255, 0.529);
   color: #fff;
   font-size: 1rem;
@@ -191,6 +189,9 @@ body {
 .p_four p {
   color: hsl(198, 62%, 26%);
 }
+.p_bold {
+  font-family: "Fraunces", serif;
+}
 .testimonial {
   background-color: #fff;
   padding: 9rem 9rem 9rem 9rem;
@@ -269,12 +270,12 @@ footer {
   margin-bottom: 7rem;
 }
 .foot li a:link,
-.foot li a:active {
+.foot li a:visited {
   text-decoration: none;
   color: hsl(168, 34%, 41%);
 }
 .foot li a:hover,
-.foot li a:visited {
+.foot li a:active {
   color: #fff;
 }
 .icons {
@@ -332,7 +333,5 @@ footer {
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .gallery img {
   }
 }
