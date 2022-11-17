@@ -26,11 +26,50 @@ body {
   background-size: cover;
   position: relative;
 }
+.menu {
+  display: none;
+  position: absolute;
+  left: 3.8rem;
+  top: 8rem;
+  text-align: center;
+  width: 80%;
+  height: 50%;
+  background-color: #fff;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  list-style: none;
+  align-items: center;
+  text-decoration: none;
+  padding: 3rem 5rem 0 5rem;
+}
+.p {
+  margin-bottom: 2rem;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: hsl(210, 4%, 67%);
+  font-size: 1.5rem;
+}
+.menu ul li .li_a {
+  text-transform: uppercase;
+  background-color: hsl(51, 100%, 49%);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: hsl(213, 9%, 39%);
+  padding: 1.5rem 2.2rem;
+  border-radius: 4rem;
+}
 .nav {
   padding: 4rem 3rem 1rem 3rem;
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
+}
+.hamburger {
+  display: none;
 }
 .nav_li ul {
   display: flex;
@@ -255,6 +294,9 @@ footer {
   }
   .nav {
     width: 100%;
+  }
+  .hamburger {
+    display: block;
   }
   .nav_li ul {
     gap: 2rem;
